@@ -1,0 +1,10 @@
+POST http://localhost:5000/api/items/add-item HTTP/1.1
+Content-Type: application/json
+
+{
+    "itemName": "Others Set"
+}
+
+###Get all items
+GET http://localhost:5000/api/items/get-all-items HTTP/1.1
+Content-Type: application/json

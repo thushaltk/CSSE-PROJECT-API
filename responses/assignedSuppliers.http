@@ -1,0 +1,15 @@
+POST http://localhost:5000/api/assigned-supplier/add-assigned-supplier HTTP/1.1
+Content-Type: application/json
+
+{
+        "purchaseOrderID": "6154b1b6c398467e30df6d4b",
+        "itemname": "6158149e4b6e7b24052ed888",
+        "quantity": 1,
+        "supplier": ["6154cb1d772b9c3da39edead"],
+        "deadline": "2021-09-23",
+        "budget": 12500
+}
+
+###Get all items
+GET http://localhost:5000/api/assigned-supplier/get-all-assigned-supplier HTTP/1.1
+Content-Type: application/json

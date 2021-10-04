@@ -1,0 +1,27 @@
+POST http://localhost:5000/api/purchase-order/add-purchase-order HTTP/1.1
+content-type: application/json
+
+{
+    "sitename": "Site10",
+    "location": "Colombo",
+    "sitemanager": "bimal Perera",
+    "order": [
+        "6154cb85df6c24501da04adb"
+    ],
+    "date": "2021-9-29",
+    "total": 0
+}
+
+###Get all purchase orders
+GET http://localhost:5000/api/purchase-order/get-all-purchase-orders HTTP/1.1
+content-type: application/json
+
+
+###Update status
+PUT http://localhost:5000/api/purchase-order/update-status HTTP/1.1
+content-type: application/json
+
+{
+    "id":"6154b1b6c398467e30df6d4b",
+    "status":"APPROVED"
+}

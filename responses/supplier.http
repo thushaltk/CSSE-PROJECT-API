@@ -1,0 +1,24 @@
+POST http://localhost:5000/api/suppliers/add-supplier HTTP/1.1
+Content-Type: application/json
+
+{
+        "name": "Kamal",
+        "location": "Colombo",
+        "contact": "0765678453",
+        "registerDate": "2021-09-23",
+        "status": "PENDING"
+}
+
+###getting supplier data
+GET http://localhost:5000/api/suppliers/get-all-suppliers HTTP/1.1
+content-type: application/json
+
+
+###remove item 
+PATCH http://localhost:5000/api/suppliers/remove-item HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": "6154d10ab35312f16275daa9",
+    "itemId": "6154cad9772b9c3da39edea9"
+}
